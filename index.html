@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizemung Project</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="currentColor"
+            d="M9.197 0L7.578 3.735H5.171v3.359h.921l.943 5.975H5.562L7.51 24.042l1.249-.015L10.015 32h11.891l.083-.531l1.172-7.443l1.188.015l1.943-10.973h-1.407l.937-5.975h1.011V3.734h-2.557L22.651-.001zm.704 1.073h12.057l1.025 2.375H8.868zm-3.666 3.73H25.76v1.228H6.235zm.604 9.333h18.183l-1.568 8.823l-7.536-.079l-7.511.079z"
+          />
+        </svg>
+        <h3>Sizemug</h3>
+      </div>
+      <div class="searchBtn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+          class="search"
+        >
+          <path
+            fill="currentColor"
+            d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617m-2.006-.742A6.98 6.98 0 0 0 18 11c0-3.867-3.133-7-7-7s-7 3.133-7 7s3.133 7 7 7a6.98 6.98 0 0 0 4.875-1.975z"
+          />
+        </svg>
+        <input type="text" placeholder="Search contents" />
+      </div>
+      <div class="others">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M5.993 17.877c.004.04.007.081.007.123v3a1 1 0 0 1-2 0v-3C4 9.163 11.163 2 20 2c0 8.162-6.111 14.896-14.007 15.877m.174-2.044A14.01 14.01 0 0 0 17.833 4.167A14.01 14.01 0 0 0 6.167 15.833"
+          />
+        </svg>
+        <div class="notify">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                d="M24 0v24H0V0zM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"
+              />
+              <path
+                fill="currentColor"
+                d="M12 2a7 7 0 0 0-7 7v3.528a1 1 0 0 1-.105.447l-1.717 3.433A1.1 1.1 0 0 0 4.162 18h15.676a1.1 1.1 0 0 0 .984-1.592l-1.716-3.433a1 1 0 0 1-.106-.447V9a7 7 0 0 0-7-7m0 19a3 3 0 0 1-2.83-2h5.66A3 3 0 0 1 12 21"
+              />
+            </g>
+          </svg>
+          <div class="dot"></div>
+        </div>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="m13.629 20.472l-.542.916c-.483.816-1.69.816-2.174 0l-.542-.916c-.42-.71-.63-1.066-.968-1.262c-.338-.197-.763-.204-1.613-.219c-1.256-.021-2.043-.098-2.703-.372a5 5 0 0 1-2.706-2.706C2 14.995 2 13.83 2 11.5v-1c0-3.273 0-4.91.737-6.112a5 5 0 0 1 1.65-1.651C5.59 2 7.228 2 10.5 2h3c3.273 0 4.91 0 6.113.737a5 5 0 0 1 1.65 1.65C22 5.59 22 7.228 22 10.5v1c0 2.33 0 3.495-.38 4.413a5 5 0 0 1-2.707 2.706c-.66.274-1.447.35-2.703.372c-.85.015-1.275.022-1.613.219c-.338.196-.548.551-.968 1.262M8 11.75a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5zM7.25 9A.75.75 0 0 1 8 8.25h8a.75.75 0 0 1 0 1.5H8A.75.75 0 0 1 7.25 9"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="magimg">
+          <img src="photo/IMG-20230101-WA0011_1.jpg" alt="" class="image" />
+          <img
+            src="photo/b21ba6a6-789e-4c47-b7cc-5bf8a33caa6e.png"
+            alt=""
+            class="image"
+          />
+          <img src="photo/woman-5845646_640.jpg" alt="" class="image" />
+        </div>
+      </div>
+    </nav>
+    <main class="general">
+      <div class="subGeneral">
+        <div class="generalBtn">
+          <div class="btnHeader">
+            <p>Step 1</p>
+            <b>Select Feed</b>
+          </div>
+          <div class="btnBody">
+            <button>Tech</button>
+            <button>Education</button>
+            <button>Fashion</button>
+            <button>Business</button>
+            <button>History</button>
+            <button>Entertainment</button>
+            <button>National Exam</button>
+            <button>Food</button>
+            <button>Sport</button>
+            <button>Graphics Design</button>
+            <button>Investment</button>
+            <button>Project Management</button>
+            <button>Magic</button>
+            <button>Law</button>
+            <button>Medicine</button>
+            <button>Health Care</button>
+            <button>Energy</button>
+            <button>Engineering</button>
+            <button>Politics</button>
+            <button>Art</button>
+            <button>Others</button>
+          </div>
+        </div>
+        <div class="generalDrag">
+          <div class="dragHeader">
+            <p>Step 2</p>
+            <b>Create Post</b>
+          </div>
+          <div class="dragBody">
+            <div class="dragHead">
+              <div class="svgs">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      d="M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2"
+                    />
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                  </g>
+                </svg>
+                <b>Post</b>
+              </div>
+              <div class="svgs">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <rect
+                    width="416"
+                    height="352"
+                    x="48"
+                    y="80"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    rx="48"
+                    ry="48"
+                  />
+                  <circle
+                    cx="336"
+                    cy="176"
+                    r="32"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    d="m304 335.79l-90.66-90.49a32 32 0 0 0-43.87-1.3L48 352m176 80l123.34-123.34a32 32 0 0 1 43.11-2L464 368"
+                  />
+                </svg>
+                <b>Cover</b>
+              </div>
+              <div class="svgs">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 48 48"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                  >
+                    <path
+                      d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      d="M26.657 14.343A7.975 7.975 0 0 0 21 12a7.975 7.975 0 0 0-5.657 2.343m17.879 18.879l8.485 8.485"
+                    />
+                  </g>
+                </svg>
+                <b>Preview</b>
+              </div>
+            </div>
+            <div class="dragContent">
+              <div class="content1">
+                <div class="cont1">
+                  <label for="upload1" id="label1" class="disabled" disabled
+                    >Add new Cover <br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="2em"
+                      height="2em"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 12h7m7 0h-7m0 0V5m0 7v7"
+                      />
+                    </svg>
+                  </label>
+                  <input type="file" id="upload1" multiple />
+                </div>
+                <div class="imageContainer">
+                  <div class="subs">
+                    <img src="" alt="" class="hidden" id="mage" />
+                    <div
+                      class="svg_mage hidden"
+                      id="svg_mage"
+                      onclick="removeImage(this)"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content2">
+                <div class="cont2">
+                  <label for="upload2" id="uploadLabel"
+                    >Upload Cover image<br />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="1em"
+                      height="1em"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M188.24 164.24a6 6 0 0 1-8.48 0L158 142.49V208a6 6 0 0 1-12 0v-65.51l-21.76 21.75a6 6 0 0 1-8.48-8.48l32-32a6 6 0 0 1 8.48 0l32 32a6 6 0 0 1 0 8.48M160 42a86.1 86.1 0 0 0-77.57 48.88A62 62 0 1 0 72 214h40a6 6 0 0 0 0-12H72a50 50 0 0 1 0-100a51 51 0 0 1 5.91.36A85.5 85.5 0 0 0 74 128a6 6 0 0 0 12 0a74 74 0 1 1 103.6 67.85a6 6 0 0 0 4.8 11A86 86 0 0 0 160 42"
+                      />
+                    </svg>
+                  </label>
+                  <input type="file" id="upload2" />
+                  <img src="" alt="" class="cover hidden" id="cover" />
+                </div>
+              </div>
+              <div class="content3">
+                <div class="cont3">
+                  <div class="cont3One">
+                    <div class="undo" role="button">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M7 13L3 9m0 0l4-4M3 9h13a5 5 0 0 1 0 10h-5"
+                        />
+                      </svg>
+                      <small>Undo</small>
+                    </div>
+                    <div class="redo" role="button">
+                      <small>Redo</small>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="1em"
+                        height="1em"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m17 13l4-4m0 0l-4-4m4 4H8a5 5 0 0 0 0 10h5"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="cont3Two">
+                    <div class="original">Original</div>
+                    <div class="deleted">Deleted</div>
+                  </div>
+                  <div class="cont33">
+                    <div>
+                      <button class="svgs1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5em"
+                          height="1.5em"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M2.5 2.75A.75.75 0 0 1 3.25 2h9a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V3.5h-3v9h1.25a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5H7v-9H4v.75a.75.75 0 0 1-1.5 0z"
+                          />
+                        </svg>
+                      </button>
+                      <small>Add Text</small>
+                    </div>
+
+                    <div>
+                      <button class="svgs2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5em"
+                          height="1.5em"
+                          viewBox="0 0 256 256"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M128 24a104 104 0 0 0 0 208c21.51 0 44.1-6.48 60.43-17.33a8 8 0 0 0-8.86-13.33C166 210.38 146.21 216 128 216a88 88 0 1 1 88-88c0 26.45-10.88 32-20 32s-20-5.55-20-32V88a8 8 0 0 0-16 0v4.26a48 48 0 1 0 5.93 65.1c6 12 16.35 18.64 30.07 18.64c22.54 0 36-17.94 36-48A104.11 104.11 0 0 0 128 24m0 136a32 32 0 1 1 32-32a32 32 0 0 1-32 32"
+                          />
+                        </svg>
+                      </button>
+                      <small>Add Tags</small>
+                    </div>
+                    <div>
+                      <button class="svgs3">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5em"
+                          height="1.5em"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                          >
+                            <path
+                              d="M16.24 3.5h-8.5a5 5 0 0 0-5 5v7a5 5 0 0 0 5 5h8.5a5 5 0 0 0 5-5v-7a5 5 0 0 0-5-5"
+                            />
+                            <path
+                              d="m2.99 17l2.75-3.2a2.2 2.2 0 0 1 2.77-.27a2.2 2.2 0 0 0 2.77-.27l2.33-2.33a4 4 0 0 1 5.16-.43l2.49 1.93M7.99 10.17a1.66 1.66 0 1 0 0-3.32a1.66 1.66 0 0 0 0 3.32"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <small>Add Image</small>
+                    </div>
+                    <div>
+                      <button class="svgs4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5em"
+                          height="1.5em"
+                          viewBox="0 0 32 32"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          >
+                            <path d="M11 25V6l13-3v20M11 13l13-3" />
+                            <ellipse cx="7" cy="25" rx="4" ry="5" />
+                            <ellipse cx="20" cy="23" rx="4" ry="5" />
+                          </g>
+                        </svg>
+                      </button>
+                      <small>Add Sound / Audio</small>
+                    </div>
+                    <div>
+                      <button class="svgs5">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="1.5em"
+                          height="1.5em"
+                          viewBox="0 0 1024 1024"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M512 624c93.9 0 170-75.2 170-168V232c0-92.8-76.1-168-170-168s-170 75.2-170 168v224c0 92.8 76.1 168 170 168m330-170c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8c0 140.3-113.7 254-254 254S258 594.3 258 454c0-4.4-3.6-8-8-8h-60c-4.4 0-8 3.6-8 8c0 168.7 126.6 307.9 290 327.6V884H326.7c-13.7 0-24.7 14.3-24.7 32v36c0 4.4 2.8 8 6.2 8h407.6c3.4 0 6.2-3.6 6.2-8v-36c0-17.7-11-32-24.7-32H548V782.1c165.3-18 294-158 294-328.1"
+                          />
+                        </svg>
+                      </button>
+                      <small>Voice Recording</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
